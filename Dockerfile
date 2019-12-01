@@ -1,7 +1,8 @@
-ARG BASE_USER
-ARG MAINTAINER
 FROM debian:latest
-MAINTAINER $MAINTAINER
+LABEL maintainer="marcusfischer808@gmail.com"
+
+ARG BUILD_DATE
+LABEL org.label-schema.build-date=$BUILD_DATE
 
 # Install Packages (ocr tools and iwatch)
 RUN apt-get update \
