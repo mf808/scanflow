@@ -1,8 +1,8 @@
 # Scanflow
 
 ## Overview
-OCR (german) incoming PDF files and convert to A-PDF (searchable)
-Watches in 2 seperate directories to be configured via -v.
+- OCR (german) incoming PDF files and convert to A-PDF (searchable)
+- Watches in 2 seperate directories to be configured via -v.
 
 ## Run 
 ```bash
