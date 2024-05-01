@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM bitnami/minideb:latest
 LABEL maintainer="marcusfischer808@gmail.com"
 
 ARG BUILD_DATE
@@ -14,7 +14,7 @@ RUN apt-get update \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
 
-COPY startup_wrapper.sh startup_wrapper.sh
+COPY ./scanflow/startup_wrapper.sh startup_wrapper.sh
 
 
 # Start the folder watchdog, to trigger the ocr function on pdf
